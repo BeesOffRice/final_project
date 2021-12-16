@@ -1,0 +1,59 @@
+figure{
+    display:inline-block;
+}
+
+main{
+    border-style:solid;
+    border-width:5px;
+    border-color:#0C254B;
+    margin:2%;
+    background-color: #FECEB3;
+}
+
+header{
+    background-color: #28A8A8;
+    margin:auto;
+    border-radius:auto;
+    padding:3%;
+}
+
+.navItems{
+    text-align: center;
+    float: right;
+    background-color:#FECEB3;
+    color:#0C254B;
+    padding:2%;
+    margin:0px 10px 20px 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.webName{
+    font-size: 40pt;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    background-color: hsl(180, 62%, 41%);
+    color:white;  
+    text-align: center;  
+    height:100px;
+    margin-top:0;
+    font-size: 50px;
+}
+
+div.gallery_image{
+    text-align:center;
+    display: inline-block;
+    clear:both; 
+    margin:3%;
+    width:600px;
+}
+
+div.gallery_image2{
+    text-align:center;
+    display:inline-block;
+    clear:both; 
+    margin:3%;
+    width:1370px;
+}

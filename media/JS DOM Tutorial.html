@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/html/js_dom.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Tutorial</title>
+
+    <link rel="stylesheet" href="./JS DOM Tutorial_files/styles.css">
+
+    <!-- <script src="../js_dom_tutorial/js_dom_part1.js" defer></script> -->
+    <!-- <script src="../js_dom_tutorial/js_dom_part2.js" defer></script> -->
+    <script src="./JS DOM Tutorial_files/js_dom_part3.js.download" defer=""></script>
+
+</head>
+<body>
+
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <h1 id="header-title">JS with DOM API for Frontend Interactivity and Dynamic Behavior </h1>
+        </div>
+        
+    </header>
+
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h2 class="title"> Add Items</h2>
+            <form class="form-inline mb-3">
+                <input type="text" class="form-control mr-2">
+
+                <!-- the SELECT ELEMENT giving choices and taking polls etc. -->
+                <hr>
+                <!-- <select class="form-control mr-2"> -->
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <hr>
+                <input type="submit" class="btn btn-dark" value="Submit">
+            </form>
+            <h2 class="title">Items</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+            </ul>
+            <!-- A randong div elem to test out some event listener features -->
+            <div id="randomDiv"></div>
+            <!-- Following code is for demo to EVENTS in JS -->
+            <hr>
+            <button class="btn btn-dark btn-block" id="demoButton">I am an HTML Button. Click Me!!</button>
+            <!-- Below Statement shows inline way of adding events. Note you should NOT use this anymore -->
+            <!-- <hr>
+            <button onclick="alert('You Clicked A button on this page!!')" class="btn btn-dark btn-block" id="button">Click This Button with Inline event</button> -->
+            <!-- Below Statement shows inline way of adding events with a function call. Note you should NOT use this anymore -->
+            <!-- <hr>
+            <button onclick="buttonClicked()" class="btn btn-dark btn-block" id="button">Click This Button with Inline event and JS Function Call</button> -->
+
+            <!-- Some HTML elements to test out some other types of events which cannot use the button element -->
+            <hr>
+            <div id="randomDivBox" style="width:500px;height: 300px; background-color: antiquewhite;">
+            </div>
+        </div>
+
+    </div>
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

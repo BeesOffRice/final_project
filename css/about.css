@@ -1,0 +1,68 @@
+header{
+    background-color: #28A8A8;
+    margin:auto;
+    border-radius:auto;
+    padding:3%;
+}
+
+.navItems{
+    text-align: center;
+    float: right;
+    background-color:#FECEB3;
+    color:#0C254B;
+    padding:2%;
+    margin:0px 10px 20px 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.webName{
+    font-size: 40pt;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+main{
+    text-align: left;
+    display:flex;
+    border-width: 5px;
+    border-color:#0C254B;
+    border-style: solid;
+    padding:1%;
+    margin:2%;
+    overflow:auto; 
+}
+
+image{
+    text-align: left;
+    flex:1;
+    padding:0px;
+    clear:both;
+    display:inline-block;
+}
+
+div{
+    text-align: center;
+    color:#0C254B;
+    flex:2; 
+    padding:3%;
+    margin:2%;
+    display:inline-block;
+    background-color: #FECEB3;
+    clear: both;
+    width:200px;
+    block-size:325px;
+    overflow-y: hidden;
+}
+
+footer{
+    text-align: center;
+}
+
+.mediaLinks{
+    padding:0.5%;
+    margin:0px 10px 20px 5px;
+    background-color: #28A8A8;
+    color:white;
+}
+
+
